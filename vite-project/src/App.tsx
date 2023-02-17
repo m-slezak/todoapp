@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import { BsPlusSquare } from "react-icons/bs";
 
 function App() {
   const [text, setText] = useState("");
@@ -8,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <input type="text" className="input" />
-      <buton>add</buton>
+      <button>
+        <BsPlusSquare />
+      </button>
     </div>
   );
 }
